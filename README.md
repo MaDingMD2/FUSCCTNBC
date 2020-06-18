@@ -3,6 +3,6 @@ Fudan University Shanghai Cancer Center Triple-negative breast cancer (FUSCCTNBC
 We uploaded 3 de-identified vcfs of one TNBC patient (TNBC34_GATK.BamReadcount.MAFfiltered.VEP.vcf, TNBC34_Pindel.del_BamReadcount.MAFfiltered.VEP.vcf and TNBC34_Pindel.ins_BamReadcount.MAFfiltered.VEP.vcf) as examples. Preprocessings of the data include: 
 1. Only variants with high confidence according to the following criteria were retained: 1) for SNVs, at least 20x coverage, allelic depth (AD) ≥ 5 for the alternative allele and 20% variant allele frequency (VAF) were required; 2) for indels, identified by both GATK and Pindel, or Pindel-unique calls with high confidence (at least 30x coverage and 20% VAF).
 2. Only rare variants (MAF <0.5% in the East Asian population) were retained.
-
+3. Remaining variants were submitted to Ensembl Variant Effect Predictor (VEP).
 
 Note: Raw data of the FUSCCTNBC project can be viewed in The National Omics Data Encyclopedia (NODE) (http://www.biosino.org/node) by pasting the accession (OEP000155) into the text search box or through the URL: http://www.biosino.org/node/project/detail/OEP000155. Microarray data and sequence data have also been deposited in the NCBI Gene Expression Omnibus and Sequence Read Archive under accession numbers GSE118527 (OncoScan), and SRP157974 (WES and RNA-seq), respectively.
