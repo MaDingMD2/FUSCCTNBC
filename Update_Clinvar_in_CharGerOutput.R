@@ -35,7 +35,7 @@ for(i in 1: nrow(GATK_vcf_RS))
   }
   
 ## Add Clinvar to CharGer output
-GATK_vcf_RS$Var_ID  <- paste(GATK_vcf_RS$V1, ":", GATK_vcf_RS$V2, ":", GATK_vcf_RS$V4 , ":", GATK_vcf_RS$V5, sep = "")
+GATK_vcf_RS$Var_ID  <- paste(GATK_vcf_RS$V1, ":", GATK_vcf_RS$V2, sep = "")
 row.names(GATK_vcf_RS) <- GATK_vcf_RS$Var_ID 
 CharGer.GATK$Var_ID <- paste(CharGer.GATK$Chromosome, ":", CharGer.GATK$Start, ":",
                              CharGer.GATK$Reference , ":", CharGer.GATK$Alternate, sep = "")
